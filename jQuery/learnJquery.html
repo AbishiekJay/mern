@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            #circle{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                background-color: green;
+            }
+            #square{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                margin: 10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <p id ="text_change">New Text</p>
+        <div id = "square"></div>
+        <div id = "circle"></div>
+        <div id = "square"></div>
+       <script>
+        $("#circle").click(function(){
+            alert("circle is clicked")
+        });
+        $("#square").hover(function(){
+            alert("square is hovered")
+        });
+        $("#text_change").click(function(){
+            $("#text_change").html("text changed")
+        });
+        /*
+        when need to change attribute using JQuery
+        $("#text_change").attr("src","https://www.google.com");
+        attr takes 2 arguments where the first argument is the attribute to be changed and second argument is the value to be changed
+        */
+       
+        /*
+        when need to change css using JQuery
+        $("#text_change").css("background-color","red");
+        css takes 2 arguments where the first argument is the attribute to be changed and second argument is the value to be changed
+        */
+
+         /*
+        when need to remove clicked element using JQuery
+        $(this).css("display","none");
+        this keyword selects the element that is clicked (selected by the user)
+        */
+
+        /*
+        when need fadeout using JQuery
+        $("text_change").fadeOut("slow");
+        fadeout will happen slowly
+        */
+
+        /*
+        when need fade in using JQuery
+        $("text_change").fadeIn();
+        fadeout will happen slowly
+        */
+
+        // callback function is called when one particular action is completed
+
+        // regular expression
+
+        var random_string = "some random random random random random string";
+        var regex = /random/g;
+        var result = random_string.match(regex);
+        console.log(result);
+       </script>
+    </body>
+</html>

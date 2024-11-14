@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="jquery-ui-1.14.1/jquery-ui.css"></script>
+        <link href="jquery-ui-1.14.1/jquery-ui.js">
+        <style>
+            #drag{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "drag">
+            <p> this is draggable</p>
+        </div>
+        <script>
+            //$(function() { the draggable within function is optional
+            $("#drag").draggable();
+            //})
+        </script>
+    </body>
+</html>
